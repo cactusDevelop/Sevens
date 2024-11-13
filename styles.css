@@ -17,9 +17,8 @@
 /* DARK MODE */
 body.dark {
     background-color: var(--bg-color);
-
-    --main-color: #FF6423;
-    --contrast-color: #242526;
+    --main-color: #242526;
+    --second-color: #2c2c2a;
     --bg-color: #1a1f1b;
     --contrast-color: #eee;
     --search-bar1: #242526;
@@ -32,8 +31,9 @@ body.dark .waves .wave{
 /* GENERAL */
 :root{
     /*Colors*/
-    --main-color: #FF6423;
-    --second-color: #094074;
+    --main-color: #900035;
+    --second-color: #C5D86D;
+    --third-color: #56A3A6;
     --bg-color: white;
     --contrast-color: #111;
     --search-text: #010718;
@@ -415,7 +415,7 @@ body.dark .dark-light img.moon{
     align-items: center;
     justify-content: space-between;
     padding: 15vh 10vw;
-    background-color: #091d30;
+    background-color: var(--third-color);
 }
 .shop .shop-txt{
     width: 15rem;

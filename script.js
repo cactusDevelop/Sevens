@@ -3,11 +3,7 @@ const body = document.querySelector("body"),
       modeToggle = document.querySelector(".dark-light"),
       searchToggle = document.querySelector(".searchtoggle"),
       sidebarOpen = document.querySelector(".sidebar-open"),
-      sidebarClose = document.querySelector(".sidebar-close"),
-      imgGold = document.querySelector('.gold'),
-      loadingText = document.querySelector('.loading-text'),
-      videoHero = document.querySelector('.hero-video'),
-      alex = document.querySelector('.alex');
+      sidebarClose = document.querySelector(".sidebar-close");
 
 let getMode = localStorage.getItem("mode");
 
@@ -54,26 +50,5 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
-// LOADING
-imgGold.addEventListener('load', () => {
-    loadingText.style.opacity = '0';
-    loadingText.style.display = 'none';
-    imgGold.style.opacity = '1';
-});
-videoHero.addEventListener('canplay', () => {
-    videoHero.style.display = 'block';
-    videoHero.style.opacity = '1';
-});
-
 
 // TEST AREA
-document.addEventListener("DOMContentLoaded", function () {
-    const sparkle = document.querySelector(".sparkle");
-
-    imgGold.addEventListener("click", function(){
-        sparkle.style.display = "block";
-        sparkle.addEventListener("animationend", function () {
-            sparkle.style.display = "none";
-        }, { once: true });
-    });
-});
